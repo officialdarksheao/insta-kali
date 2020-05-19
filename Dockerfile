@@ -6,5 +6,6 @@ RUN git clone https://github.com/carlospolop/privilege-escalation-awesome-script
 RUN apt-get install dirbuster dirb dnsmap wfuzz sqlmap wordlists -y
 RUN apt-get install python -y
 RUN apt-get install nano netcat fdisk man -y
+RUN apt-get install tmux openssh-server -y
 
 ENTRYPOINT /bin/bash
