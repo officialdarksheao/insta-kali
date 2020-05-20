@@ -7,5 +7,10 @@ RUN apt-get install dirbuster dirb dnsmap wfuzz sqlmap wordlists -y
 RUN apt-get install python -y
 RUN apt-get install nano netcat fdisk man -y
 RUN apt-get install tmux openssh-server -y
+RUN mkdir /opt/sources
+RUN curl https://bootstrap.pypa.io/get-pip.py -o /opt/sources/get-pip.py
+RUN python /opt/sources/get-pip.py
+RUN pip install uncompyle6
+ADD ./config/.bashrc /root/.bashrc
 
 ENTRYPOINT /bin/bash
