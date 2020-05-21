@@ -12,5 +12,5 @@ RUN curl https://bootstrap.pypa.io/get-pip.py -o /opt/sources/get-pip.py
 RUN python /opt/sources/get-pip.py
 RUN pip install uncompyle6
 ADD ./config/.bashrc /root/.bashrc
-
+RUN apt-get install libssl-dev lzip m4 libc6-dev-i386 libgmp3-dev steghide -y
 ENTRYPOINT /bin/bash
