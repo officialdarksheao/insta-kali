@@ -16,4 +16,5 @@ RUN apt-get install libssl-dev lzip m4 libc6-dev-i386 libgmp3-dev steghide -y
 RUN apt-get install remmina -y
 RUN git clone https://github.com/rebootuser/LinEnum.git /opt/script/LinEnum
 RUN cd /usr/share/wordlists && gzip -d rockyou.txt.gz
+RUN apt-get install nikto -y
 ENTRYPOINT /bin/bash
