@@ -17,4 +17,5 @@ RUN apt-get install remmina -y
 RUN git clone https://github.com/rebootuser/LinEnum.git /opt/script/LinEnum
 RUN cd /usr/share/wordlists && gzip -d rockyou.txt.gz
 RUN apt-get install nikto -y
+RUN apt-get install inetutils-ping -y
 ENTRYPOINT /bin/bash
