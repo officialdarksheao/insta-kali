@@ -18,5 +18,5 @@ RUN git clone https://github.com/rebootuser/LinEnum.git /opt/script/LinEnum
 RUN cd /usr/share/wordlists && gzip -d rockyou.txt.gz
 RUN apt-get install nikto -y
 RUN apt-get install inetutils-ping -y
-RUN apt-get install traceroute -y
+RUN apt-get install traceroute whois -y
 ENTRYPOINT /bin/bash
