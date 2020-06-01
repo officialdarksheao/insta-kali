@@ -22,5 +22,7 @@ RUN apt-get install traceroute whois dnsutils -y
 RUN apt-get install telnet tcpdump ftp exploitdb -y
 RUN git clone https://github.com/PowerShellMafia/PowerSploit.git /opt/scripts/powersploit
 RUN git clone https://github.com/samratashok/nishang.git /opt/scripts/nishang
+RUN git clone https://github.com/AonCyberLabs/Windows-Exploit-Suggester.git /opt/scripts/suggest-windows-exploit
 RUN apt-get install aircrack-ng -y
+RUN pip install xlrd --upgrade
 ENTRYPOINT /bin/bash
