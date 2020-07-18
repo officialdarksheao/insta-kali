@@ -25,4 +25,5 @@ RUN git clone https://github.com/samratashok/nishang.git /opt/scripts/nishang
 RUN git clone https://github.com/AonCyberLabs/Windows-Exploit-Suggester.git /opt/scripts/suggest-windows-exploit
 RUN apt-get install aircrack-ng -y
 RUN pip install xlrd --upgrade
+RUN apt-get install sqlite3 -y
 ENTRYPOINT /bin/bash
