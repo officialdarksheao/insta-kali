@@ -26,4 +26,6 @@ RUN git clone https://github.com/AonCyberLabs/Windows-Exploit-Suggester.git /opt
 RUN apt-get install aircrack-ng -y
 RUN pip install xlrd --upgrade
 RUN apt-get install sqlite3 -y
+RUN apt-get install smbmap -y
+RUN apt-get install joomscan -y
 ENTRYPOINT /bin/bash
