@@ -28,4 +28,6 @@ RUN pip install xlrd --upgrade
 RUN apt-get install sqlite3 -y
 RUN apt-get install smbmap -y
 RUN apt-get install joomscan -y
+RUN apt-get install exiftool -y
+ADD scripts/* /opt/scripts
 ENTRYPOINT /bin/bash
