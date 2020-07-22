@@ -30,4 +30,6 @@ RUN apt-get install smbmap -y
 RUN apt-get install joomscan -y
 RUN apt-get install exiftool -y
 ADD scripts/* /opt/scripts
+ADD lists/* /opt/lists
+RUN apt-get install wpscan -y
 ENTRYPOINT /bin/bash
